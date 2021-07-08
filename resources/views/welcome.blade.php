@@ -7,6 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
@@ -35,6 +36,11 @@
                     @endauth
                 </div>
             @endif
+                <div class="content">
+                    <div class="title m-b-md">
+                        Laravel
+                    </div>
+
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
@@ -123,10 +129,11 @@
                     </div>
 
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                        Laravel v{{ Illuminate\Foundation\Application::VERSION}} (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
+
