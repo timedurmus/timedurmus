@@ -15,8 +15,8 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function () {
-    $links = App\Models\Link::all();
-    return view('welcome', ['links'=>$links]);
+   $links = App\Models\Link::all();
+  return view('welcome', ['links'=>$links]);
 });
 Route::get('/submit', function (){
     return view('submit');
@@ -33,10 +33,8 @@ Route::post('/submit',function (Request $request){
 
 //-------------
 
-Route::get('/', IndexController::class );
 
 
 
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
